@@ -1,7 +1,7 @@
 pipeline {
     agent none
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockermasuk')
+        DOCKERHUB_CREDENTIALS = credentials('logindeploy')
     }
 
     stages {
@@ -38,13 +38,13 @@ pipeline {
                 }
             }
             steps {
-                withCredentials([sshUserPrivateKey(credentialsId: 'sshmasuk', keyFileVariable: 'keyfile')]) {
-                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.16 "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"'
-		    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.16 docker pull gismahoerudin092/nodejsgoof:0.1'
-                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.16 docker rm --force mongodb'
-                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.16 docker run --name mongodb -d --network nodejsgoof -p 27017:27017 mongo:3'
-                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.16 docker rm --force nodejsgoof'
-                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.16 docker run -d --name nodejsgoof --network host gismahoerudin092/nodejsgoof:0.1'
+                withCredentials([sshUserPrivateKey(credentialsId: 'sshdeploy', keyFileVariable: 'keyfile')]) {
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.6 "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"'
+		    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.6 docker pull gismahoerudin092/nodejsgoof:0.1'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.6 docker rm --force mongodb'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.6 docker run --name mongodb -d --network nodejsgoof -p 27017:27017 mongo:3'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.6 docker rm --force nodejsgoof'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.6 docker run -d --name nodejsgoof --network host gismahoerudin092/nodejsgoof:0.1'
                 }
             }
         }

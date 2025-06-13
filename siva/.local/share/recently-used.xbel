@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/siva/Downloads/HeroBiz.zip" added="2025-05-30T19:24:15.953919Z" modified="2025-05-30T19:24:15.953979Z" visited="2025-05-30T19:24:15.953922Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox-esr %u&apos;" modified="2025-05-30T19:24:15.953972Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siva/enigma/nodejs-goof/jenkinsfile" added="2025-06-04T02:47:00.033159Z" modified="2025-06-04T18:12:56.943593Z" visited="2025-06-04T02:47:00.033161Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 4:5;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2025-06-04T18:12:56.943589Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siva/enigma/nodejs-goof/package.json" added="2025-06-13T18:03:53.243682Z" modified="2025-06-13T18:04:17.079757Z" visited="2025-06-13T18:03:53.243684Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 0:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-06-13T18:03:53.243781Z" count="1"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2025-06-13T18:04:17.079752Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/siva/enigma/nodejs-goof/package-lock.json" added="2025-06-13T18:04:21.762890Z" modified="2025-06-13T18:04:37.835727Z" visited="2025-06-13T18:04:21.762892Z">
+    <desc>Language: ; Encoding: UTF-8; Cursor: 77:0;</desc>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>Mousepad</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Thunar" exec="&apos;Thunar %u&apos;" modified="2025-06-13T18:04:21.762897Z" count="1"/>
+          <bookmark:application name="Mousepad" exec="&apos;mousepad %u&apos;" modified="2025-06-13T18:04:37.835722Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

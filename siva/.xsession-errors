@@ -1,0 +1,99 @@
+Xsession: X session started for siva at Fri Jun 13 05:26:11 EDT 2025
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/siva/.Xauthority
+localuser:siva being added to access control list
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting POWERSHELL_TELEMETRY_OPTOUT=1
+dbus-update-activation-environment: setting USER=siva
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting DOTNET_CLI_TELEMETRY_OPTOUT=1
+dbus-update-activation-environment: setting HOME=/home/siva
+dbus-update-activation-environment: setting DESKTOP_SESSION=lightdm-xsession
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting COMMAND_NOT_FOUND_INSTALL_PROMPT=1
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=qt5ct
+dbus-update-activation-environment: setting LOGNAME=siva
+dbus-update-activation-environment: setting QT_AUTO_SCREEN_SCALE_FACTOR=0
+dbus-update-activation-environment: setting XDG_SESSION_CLASS=user
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games
+dbus-update-activation-environment: setting _JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting LANG=C.UTF-8
+dbus-update-activation-environment: setting POWERSHELL_UPDATECHECK=Off
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=lightdm-xsession
+dbus-update-activation-environment: setting XAUTHORITY=/home/siva/.Xauthority
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/siva
+dbus-update-activation-environment: setting SHELL=/usr/bin/zsh
+dbus-update-activation-environment: setting GDMSESSION=lightdm-xsession
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting PWD=/home/siva
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/
+09:26:14.120961 main     VBoxClient 7.0.14_Debian r161095 (verbosity: 0) linux.amd64 (Jan 27 2024 11:13:36) release log
+09:26:14.120966 main     Log opened 2025-06-13T09:26:14.120935000Z
+09:26:14.129925 main     OS Product: Linux
+09:26:14.133981 main     OS Release: 6.8.11-amd64
+09:26:14.137860 main     OS Version: #1 SMP PREEMPT_DYNAMIC Kali 6.8.11-1kali2 (2024-05-30)
+09:26:14.140376 main     Executable: /usr/bin/VBoxClient
+09:26:14.140382 main     Process ID: 843
+09:26:14.140383 main     Package type: LINUX_64BITS_GENERIC (OSE)
+09:26:14.141112 main      VBoxClient 7.0.14_Debian r161095 started. Verbose level = 0. Wayland environment detected: no
+09:26:14.142805 main      Service: Shared Clipboard
+09:26:14.165585 main     VBoxClient 7.0.14_Debian r161095 (verbosity: 0) linux.amd64 (Jan 27 2024 11:13:36) release log
+09:26:14.165590 main     Log opened 2025-06-13T09:26:14.165573000Z
+09:26:14.166993 main     OS Product: Linux
+09:26:14.167364 main     OS Release: 6.8.11-amd64
+09:26:14.167732 main     OS Version: #1 SMP PREEMPT_DYNAMIC Kali 6.8.11-1kali2 (2024-05-30)
+09:26:14.168254 main     Executable: /usr/bin/VBoxClient
+09:26:14.168256 main     Process ID: 847
+09:26:14.168258 main     Package type: LINUX_64BITS_GENERIC (OSE)
+09:26:14.169996 main      VBoxClient 7.0.14_Debian r161095 started. Verbose level = 0. Wayland environment detected: no
+09:26:14.170638 main      Service: VirtualBox host version check
+09:26:14.218207 main     VBoxClient 7.0.14_Debian r161095 (verbosity: 0) linux.amd64 (Jan 27 2024 11:13:36) release log
+09:26:14.218213 main     Log opened 2025-06-13T09:26:14.218195000Z
+09:26:14.228394 main     OS Product: Linux
+09:26:14.229817 main     OS Release: 6.8.11-amd64
+09:26:14.230230 main     OS Version: #1 SMP PREEMPT_DYNAMIC Kali 6.8.11-1kali2 (2024-05-30)
+09:26:14.230759 main     Executable: /usr/bin/VBoxClient
+09:26:14.230762 main     Process ID: 851
+09:26:14.230763 main     Package type: LINUX_64BITS_GENERIC (OSE)
+09:26:14.231465 main      VBoxClient 7.0.14_Debian r161095 started. Verbose level = 0. Wayland environment detected: no
+09:26:14.234149 main      Service: Seamless Mode Support
+09:26:14.298449 main     VBoxClient 7.0.14_Debian r161095 (verbosity: 0) linux.amd64 (Jan 27 2024 11:13:36) release log
+09:26:14.298455 main     Log opened 2025-06-13T09:26:14.298437000Z
+09:26:14.299432 main     OS Product: Linux
+09:26:14.300262 main     OS Release: 6.8.11-amd64
+09:26:14.301877 main     OS Version: #1 SMP PREEMPT_DYNAMIC Kali 6.8.11-1kali2 (2024-05-30)
+09:26:14.302494 main     Executable: /usr/bin/VBoxClient
+09:26:14.302498 main     Process ID: 859
+09:26:14.302500 main     Package type: LINUX_64BITS_GENERIC (OSE)
+09:26:14.303402 main      VBoxClient 7.0.14_Debian r161095 started. Verbose level = 0. Wayland environment detected: no
+09:26:14.304247 main      Service: Drag'n'Drop
+09:26:14.366979 main     VBoxClient 7.0.14_Debian r161095 (verbosity: 0) linux.amd64 (Jan 27 2024 11:13:36) release log
+09:26:14.366984 main     Log opened 2025-06-13T09:26:14.366967000Z
+09:26:14.368763 main     OS Product: Linux
+09:26:14.369964 main     OS Release: 6.8.11-amd64
+09:26:14.371202 main     OS Version: #1 SMP PREEMPT_DYNAMIC Kali 6.8.11-1kali2 (2024-05-30)
+09:26:14.371748 main     Executable: /usr/bin/VBoxClient
+09:26:14.371751 main     Process ID: 871
+09:26:14.371752 main     Package type: LINUX_64BITS_GENERIC (OSE)
+09:26:14.372500 main      VBoxClient 7.0.14_Debian r161095 started. Verbose level = 0. Wayland environment detected: no
+09:26:14.374392 main      Service: VMSVGA display assistant
+/usr/bin/x-session-manager: X server already running on display :0
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+xfce4-session-Message: 05:26:16.805: SSH authentication agent is already running
+gpg-agent: a gpg-agent is already running - not starting a new one
+
+(xfwm4:936): xfwm4-WARNING **: 05:26:20.251: Unsupported GL renderer (llvmpipe (LLVM 17.0.6, 128 bits)).
+
+(polkit-mate-authentication-agent-1:1079): GLib-CRITICAL **: 05:26:32.934: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-mate-authentication-agent-1:1079): polkit-mate-1-WARNING **: 05:26:33.074: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (xiccd:1103): WARNING **: 05:26:36.705: EDID is empty
+blueman-applet 05.26.50 WARNING  PluginManager:150 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+blueman-applet 05.26.50 WARNING  PluginManager:150 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+blueman-applet 05.26.51 WARNING  DiscvManager:122 update_menuitems: warning: Adapter is None

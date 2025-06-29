@@ -1,24 +1,14 @@
 pipeline {
     agent none
-
     environment {
         DOCKERHUB_CREDENTIALS = credentials('deploylogin')
     }
 
     stages {
-
-        stage('Checkout Code') {
-            agent any
-            steps {
-                checkout scm
-            }
-        }
-
         stage('Build') {
             agent {
                 docker {
                     image 'node:lts-buster-slim'
-                    args '-u root -v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
             steps {
@@ -30,7 +20,7 @@ pipeline {
             agent {
                 docker {
                     image 'docker:dind'
-                    args '--privileged -u root -v /var/run/docker.sock:/var/run/docker.sock'
+                    args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
             steps {
@@ -44,24 +34,19 @@ pipeline {
             agent {
                 docker {
                     image 'kroniak/ssh-client'
-                    args '-u root -v /var/run/docker.sock:/var/run/docker.sock'
+                    args '--user root -v /var/run/docker.sock:/var/run/docker.sock'
                 }
             }
             steps {
                 withCredentials([sshUserPrivateKey(credentialsId: 'sshkey', keyFileVariable: 'keyfile')]) {
-                    sh '''
-                        ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.6 "
-                            echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin &&
-                            docker pull gismahoerudin092/nodejsgoof:0.1 &&
-                            docker rm --force mongodb || true &&
-                            docker run --name mongodb -d --network nodejsgoof -p 27017:27017 mongo:3 &&
-                            docker rm --force nodejsgoof || true &&
-                            docker run -d --name nodejsgoof --network host gismahoerudin092/nodejsgoof:0.1
-                        "
-                    '''
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.7 "echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin"'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.7 docker pull gismahoerudin092/nodejsgoof:0.1'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.7 docker rm --force mongodb'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.7 docker run --name mongodb -d --network nodejsgoof -p 27017:27017 mongo:3'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.7 docker rm --force nodejsgoof'
+                    sh 'ssh -i ${keyfile} -o StrictHostKeyChecking=no dea@192.168.0.7 docker run -d --name nodejsgoof --network host gismahoerudin092/nodejsgoof:0.1'
                 }
             }
         }
     }
 }
-
